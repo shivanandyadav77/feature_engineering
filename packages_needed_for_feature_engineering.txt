@@ -1,0 +1,31 @@
+pandas=>0.24.2
+numpy=>1.16.2
+scikit-learn=>0.21.2
+scipy=>1.2.1
+category-encoders=>2.0.0
+feature-engine=>0.3.0
+
+
+pip install feature-engine
+pip install category-encoders
+
+
+
+conda create -n mynewenv python=3.6 anaconda
+activate mynewenv
+conda install numpy
+conda istall pandas
+pip install feature-engine
+pip install category-encoders
+
+
+
+Adding a new environment to the Jupyter Notebook (optional)
+To add the created environments to the Jupyter notebook follow this link. Briefly, if using conda, from anaconda prompt:
+
+source activate mynewenv
+python -m ipykernel install --user --name mynewenv --display-name "Python py35"
+source activate other-env
+python -m ipykernel install --user --name other-env --display-name "Python (other-env)"
+
+
